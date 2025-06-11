@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Navbar from "@/components/layout/Navbar";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -34,6 +35,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Page Header */}
       <div className="bg-primary/10 py-12">
         <div className="container mx-auto px-4">

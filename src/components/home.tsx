@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/layout/Navbar";
 import {
   Card,
   CardContent,
@@ -79,6 +80,7 @@ const Home = () => {
 
   return (
     <div className="bg-background min-h-screen">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-primary/90 to-primary py-24 md:py-32">
         <div className="container mx-auto px-4">
