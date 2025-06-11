@@ -205,7 +205,7 @@ const Home = () => {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg hidden md:block">
-                <p className="text-2xl font-bold">10+ Years</p>
+                <p className="text-2xl font-bold">3+ Years</p>
                 <p>of industry experience</p>
               </div>
             </div>
