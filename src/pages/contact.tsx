@@ -34,7 +34,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pt-20">
       <Navbar />
       {/* Page Header */}
       <div className="bg-primary/10 py-12">
@@ -207,14 +207,17 @@ const ContactPage = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4">Find Us</h2>
               <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                {/* Placeholder for an actual map integration */}
-                <div className="w-full h-full flex items-center justify-center bg-muted">
-                  <p className="text-muted-foreground">
-                    Interactive Map Would Be Displayed Here
-                  </p>
-                </div>
+                <iframe
+                  title="Map of Kisii Nyamataro"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127665.92927569438!2d34.6955583!3d-0.6822048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f7b181f29a059%3A0xb1cd735a1dbad5f!2sNyamataro%2C%20Kisii!5e0!3m2!1sen!2ske!4v1718127207083!5m2!1sen!2ske"
+                ></iframe>
               </div>
             </div>
+
           </div>
         </div>
       </div>

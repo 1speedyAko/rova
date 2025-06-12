@@ -1,0 +1,12 @@
+.navigation-menu-content {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+@media (max-width: 768px) {
+  .navigation-menu-content {
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+}
