@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Link } from "react-router-dom";
 import { useRoutes, Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import ContactPage from "./pages/contact";
