@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import {
   Card,
@@ -60,8 +61,8 @@ const BrandMarketingPage = () => {
                 Create a strong, recognizable brand identity that connects with
                 your audience and drives business growth
               </p>
-              <Button size="lg" variant="secondary">
-                Start Brand Journey
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/contact">Start Brand Journey</Link>
               </Button>
             </div>
           </div>
@@ -150,7 +151,9 @@ const BrandMarketingPage = () => {
               Let's create a brand identity that resonates with your audience
               and drives growth
             </p>
-            <Button size="lg">Build Your Brand</Button>
+            <Button size="lg" asChild>
+              <Link to="/contact">Build Your Brand</Link>
+            </Button>
           </div>
         </section>
       </div>

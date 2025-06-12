@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import {
   Card,
@@ -60,8 +61,8 @@ const GoogleAdsPage = () => {
                 Drive immediate results with targeted Google Ads campaigns that
                 reach your ideal customers
               </p>
-              <Button size="lg" variant="secondary">
-                Get Free Audit
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/contact">Get Free Audit</Link>
               </Button>
             </div>
           </div>
@@ -150,7 +151,9 @@ const GoogleAdsPage = () => {
             <p className="text-lg text-gray-600 mb-8">
               Let's create targeted campaigns that drive real business results
             </p>
-            <Button size="lg">Start Your Campaign</Button>
+            <Button size="lg" asChild>
+              <Link to="/contact">Start Your Campaign</Link>
+            </Button>
           </div>
         </section>
       </div>

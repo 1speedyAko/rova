@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import {
   Card,
@@ -60,8 +61,8 @@ const SEOPage = () => {
                 Boost your search rankings and drive organic traffic with our
                 proven SEO strategies
               </p>
-              <Button size="lg" variant="secondary">
-                Get SEO Audit
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/services/seo-audit">Get SEO Audit</Link>
               </Button>
             </div>
           </div>
@@ -147,7 +148,9 @@ const SEOPage = () => {
             <p className="text-lg text-gray-600 mb-8">
               Let's discuss how our SEO services can help grow your business
             </p>
-            <Button size="lg">Start Your SEO Journey</Button>
+            <Button size="lg" asChild>
+              <Link to="/contact">Start Your SEO Journey</Link>
+            </Button>
           </div>
         </section>
       </div>

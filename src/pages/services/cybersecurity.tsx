@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import {
   Card,
@@ -60,8 +61,8 @@ const CybersecurityPage = () => {
                 Comprehensive cybersecurity solutions to protect your business
                 from digital threats and data breaches
               </p>
-              <Button size="lg" variant="secondary">
-                Security Assessment
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="/contact">Security Assessment</Link>
               </Button>
             </div>
           </div>
@@ -148,7 +149,9 @@ const CybersecurityPage = () => {
               Don't wait for a security breach. Protect your business with our
               comprehensive cybersecurity solutions
             </p>
-            <Button size="lg">Get Protected Now</Button>
+            <Button size="lg" asChild>
+              <Link to="/contact">Get Protected Now</Link>
+            </Button>
           </div>
         </section>
       </div>
