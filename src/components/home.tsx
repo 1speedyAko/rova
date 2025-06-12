@@ -110,6 +110,75 @@ const Home = () => {
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-background to-transparent"></div>
       </section>
 
+      {/* Brands Marquee Section */}
+      <section className="py-12 bg-muted/30 overflow-hidden">
+        <div className="container mx-auto px-4 mb-8">
+          <div className="text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              Trusted by Leading Brands
+            </h2>
+            <p className="text-muted-foreground">
+              We've helped these companies achieve their digital goals
+            </p>
+          </div>
+        </div>
+
+        <div className="relative">
+          <div className="flex animate-marquee">
+            <div className="flex items-center justify-center min-w-0 shrink-0">
+              {[
+                "TechStart Inc.",
+                "Retail Solutions",
+                "Health & Wellness Co.",
+                "Global Finance Corp",
+                "Creative Studios",
+                "E-commerce Plus",
+                "Digital Innovations",
+                "Smart Systems Ltd",
+                "Future Tech",
+                "Business Solutions",
+                "Marketing Pro",
+                "Data Analytics Co",
+              ].map((brand, index) => (
+                <div
+                  key={index}
+                  className="mx-8 px-6 py-4 bg-white rounded-lg shadow-sm border flex items-center justify-center min-w-[200px]"
+                >
+                  <span className="text-lg font-semibold text-muted-foreground whitespace-nowrap">
+                    {brand}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center justify-center min-w-0 shrink-0">
+              {[
+                "TechStart Inc.",
+                "Retail Solutions",
+                "Health & Wellness Co.",
+                "Global Finance Corp",
+                "Creative Studios",
+                "E-commerce Plus",
+                "Digital Innovations",
+                "Smart Systems Ltd",
+                "Future Tech",
+                "Business Solutions",
+                "Marketing Pro",
+                "Data Analytics Co",
+              ].map((brand, index) => (
+                <div
+                  key={`duplicate-${index}`}
+                  className="mx-8 px-6 py-4 bg-white rounded-lg shadow-sm border flex items-center justify-center min-w-[200px]"
+                >
+                  <span className="text-lg font-semibold text-muted-foreground whitespace-nowrap">
+                    {brand}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
